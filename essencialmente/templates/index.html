@@ -2,7 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/essencialmente/static/css/style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');</style>
     <title>Essencialmente</title>
     {% load bootstrap5 %}
     {% bootstrap_css %}
@@ -11,28 +14,26 @@
 <body>
     <header>
         <figure id="fig_header">
-            <img id="img_header" src="/imagens/logo.png" alt="">
+            <img id="img_header" src="/essencialmente/static/img/logo.png" alt="">
         </figure>
-        <nav>
-            <ul>
-                <li>Avaliações</li>
-                <li>Relatórios</li>
-                <li id="i3">Normas Avaliação</li>
-                <li>Sobre</li>
-                <li><button id="b1">Entrar</button></li>
-            </ul>
-        </nav>
+        <ul class='nav'>
+            <li class='nav-item'>Avaliações</li>
+            <li class='nav-item'>Relatórios</li>
+            <li id="i3" class='nav-item'>Normas Avaliação</li>
+            <li class='nav-item'>Sobre</li>
+            <li class='nav-item'><button id="b1" class='btn'>Entrar</button></li>
+        </ul>
     </header>
     <main>
         <section id="s1">
             <section id="s1_1">
                 <p>O acompanhamento de criança e adolescentes com foco no seu bem-estar!</p>
-                <button id="b2">Saiba mais</button>
+                <button id="b2" class='btn'>Saiba mais</button>
             </section>
         </section>
         <section id="s2">
             <figure id="fig_main">
-                <img id="img_main" src="/imagens/img-main.png" alt="">
+                <img id="img_main" src="/essencialmente/static/img/img-main.png" alt="">
             </figure>
         </section>
     </main>
@@ -40,32 +41,49 @@
     <section id="avaliacoes">
         <section class="cards">
             <figure class="fig_cards">
-                <img class="img_cards" src="/imagens/img_card1.png" alt="">
+                <img class="img_cards" src="/essencialmente/static/img/img_card1.png" alt="">
             </figure>
             <h3>Avaliação da Antropometria e Composição Corporal</h3>
             <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt illum est possimus eveniet voluptatem. Maiores doloremque corporis quidem blanditiis autem eum porro sunt ab ipsam fuga, deleniti, reprehenderit commodi fugiat?</p>
-            <button id="b3">Avaliar</button>
+            <button id="b3" class='btn'>Avaliar</button>
         </section>
         <section class="cards">
             <figure class="fig_cards">
-                <img class="img_cards" src="/imagens/img_card2.png" alt="">
+                <img class="img_cards" src="/essencialmente/static/img/img_card2.png" alt="">
             </figure>
             <h3>Avaliação IMC</h3>
             <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora sequi dolorem, quod consequatur ex autem id ad, minus ullam explicabo sit totam illum iure eligendi! Ab esse est libero.</p>
-            <button id="b3">Avaliar</button>
+            <button id="b3" class='btn'>Avaliar</button>
         </section>
         <section class="cards">
             <figure class="fig_cards" >
-                <img class="img_cards" src="/imagens/img_card3.png" alt="">
+                <img class="img_cards" src="/essencialmente/static/img/img_card3.png" alt="">
             </figure>
             <h3>Avaliação Abdominais</h3>
             <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel minima in et aperiam accusantium voluptas possimus est ipsam dolorem laboriosam officia magnam debitis molestiae reiciendis, iste ullam porro, ut nisi.</p>
-            <button id="b3">Avaliar</button>
+            <button id="b3" class='btn'>Avaliar</button>
         </section>
     </section>
     <footer>
-        <h4>Contato</h4>
-        <span>essencialmente@email.com</span>
+        <div id='contato'>
+            <h4>Contato</h4>
+            <div>
+                <img class='contato_imgs' src="/essencialmente/static/img/icon-email.png"></img>
+                <span>essencialmente@email.com</span>
+            </div>
+            <div>
+                <img class='contato_imgs' src="/essencialmente/static/img/icon-home.png"></img>
+                <span>Rua La Salle, 56 Xanxerê - SC</span>
+            </div>
+        </div>
+        <div id='footer2'>
+            <h4>Redes Sociais</h4>
+            <div id='redes_sociais'>
+                <img class='rounded'src="/essencialmente/static/img/icon-insta.png"></img>
+                <img class='rounded'src="/essencialmente/static/img/icon-whats.png"></img>
+                <img class='rounded'src="/essencialmente/static/img/icon-twitter.png"></img>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,14 @@
+body{
+    background-color: #e3e1e1;
+}
+
+form{
+    border-width: 10px;
+    border-color: #ffc400;
+}
+
+button{
+    background-color: #ffc400;
+    border: transparent;
+    color: white;
+}
